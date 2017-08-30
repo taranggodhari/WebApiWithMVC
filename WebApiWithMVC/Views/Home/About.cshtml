@@ -1,7 +1,53 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+@model WebApiWithMVC.Models.ApiViewModel  
 
-<p>Use this area to provide additional information.</p>
+<h1>JSONPlaceholder</h1>
+<h3>Post & Get Method</h3>
+@*<h2>@ViewBag.Message</h2>*@
+<div class="form-horizontal">
+
+    <hr />
+    <div class="form-group">
+
+
+        <table class="table table-responsive" style="width:400px">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Body)
+                </th>
+
+            </tr>
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.UserId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => modelItem.Body)
+                </td>
+
+            </tr>
+
+
+        </table>
+    </div>
+</div>
+
+

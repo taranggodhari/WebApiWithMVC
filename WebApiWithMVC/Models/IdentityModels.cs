@@ -29,5 +29,7 @@ namespace WebApiWithMVC.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<WebApiWithMVC.Models.ApiViewModel> ApiViewModels { get; set; }
     }
 }
